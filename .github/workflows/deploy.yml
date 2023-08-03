@@ -17,6 +17,9 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Build
+        run: pnpm docs:clear
+
+      - name: Build
         run: pnpm docs:build
 
       - name: Deploy
